@@ -1,1 +1,0 @@
-Eevee(Pokemon) by PatrickFanart on Thingiverse: https://www.thingiverse.com/thing:3857781
