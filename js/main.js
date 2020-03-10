@@ -9,7 +9,7 @@ if (WEBGL.isWebGLAvailable()) {
     function init() {
 
         scene = new THREE.Scene();
-        scene.background = new THREE.Color(0xffffff);
+        scene.background = new THREE.Color(0x000000);
 
         camera = new THREE.PerspectiveCamera(75, window.innerWidth / window.innerHeight, 0.1, 1000);
 
@@ -31,13 +31,13 @@ if (WEBGL.isWebGLAvailable()) {
 
         loader.load(
             // resource URL
-            'models/eevee/eevee.gltf',
+            'models/eevee/eevee.glb',
             // called when the resource is loaded
             function ( gltf ) {
 
                 let object = gltf.scene.children[0];
-                object.scale.set(0.1,0.1,0.1);
-                object.position.set(0, -10, -0.75);
+                object.scale.set(200,200,200);
+                object.position.set(50, 50, 50);
 
                 scene.add( object );
 
