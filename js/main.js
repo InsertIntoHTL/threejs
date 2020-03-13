@@ -13,6 +13,7 @@ if (WEBGL.isWebGLAvailable()) {
         light = new THREE.AmbientLight(0xffffff);
         scene.add(light);
 
+
         camera = new THREE.PerspectiveCamera(45, window.innerWidth / window.innerHeight, 1, 100000);
         camera.position.set(150, 180, 280);
 
