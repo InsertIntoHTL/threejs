@@ -26,7 +26,7 @@ if (WEBGL.isWebGLAvailable()) {
         var loader = new GLTFLoader();
 
         loader.load(
-            'models/eevee/eevee.glb',
+            'models/windmill/windmill.glb',
             function ( gltf ) {
                 let object = gltf.scene.children[0];
                 object.scale.set(1,1,1);
