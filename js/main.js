@@ -1,13 +1,3 @@
-/*
-    I didn't use import by habit, anyway it not works for me ^^
-    So I think it was the big problem because your code is good.
-    And I just delete camera.position.x = 5 
-
-    You'll have an error in the console :
-    "THREE.Loader: Handlers.get() has been removed. Use LoadingManager.getHandler() instead."
-    But I can't help you, I didn't have the motivation to switch to the new function for my own code
-*/
-
 let renderer, scene, camera;
 
 function init() {
@@ -36,7 +26,7 @@ function init() {
     You can find out about textures in forums, it's easy to do with Blender ;-) 
 */
     loader.load(
-        'models/empire_state_building.glb',
+        'models/eevee/eevee2.glb',
         function ( gltf ) {
             let object = gltf.scene;
             object.scale.set(10,10,10);
